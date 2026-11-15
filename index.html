@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>分区县人口收入交叉表 · 差分隐私发布工具</title>
+  <link rel="stylesheet" href="./src/ui/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>统计数据差分隐私发布工具</h1>
+      <p class="subtitle">原始数据仅在本机处理 · 拉普拉斯/高斯机制 · 预算总量控制 · 一致性后处理 · 小格子抑制 · 全程审计</p>
+    </div>
+    <label class="operator">
+      操作员
+      <input id="operator" type="text" placeholder="姓名/工号" />
+    </label>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="data" class="active">① 原始数据</button>
+    <button data-tab="design">② 表格设计</button>
+    <button data-tab="budget">③ 隐私预算</button>
+    <button data-tab="preview">④ 发布预览</button>
+    <button data-tab="audit">⑤ 审计记录</button>
+  </nav>
+
+  <main id="main"></main>
+
+  <script type="module" src="./dist/src/ui/main.js"></script>
+</body>
+</html>
