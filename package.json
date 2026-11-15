@@ -1,0 +1,30 @@
+{
+  "name": "dp-crosstab-publisher",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "分区县人口/收入交叉表差分隐私发布工具（原始数据不出本机）",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "gen:data": "tsx scripts/generate-data.ts",
+    "attack": "tsx scripts/attack.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "e2e": "playwright test"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11"
+  }
+}

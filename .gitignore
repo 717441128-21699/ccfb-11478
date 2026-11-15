@@ -16,3 +16,11 @@ node_modules/
 __pycache__/
 .venv/
 venv/
+
+# 构建与测试产物
+dist/
+test-results/
+playwright-report/
+
+# 生成的合成数据（由 npm run gen:data 重新生成，不入库）
+data/
